@@ -1,0 +1,259 @@
+class Cast10{
+public static void main(String []args){
+ 	float b=65 ;
+	char c;
+	c=(char)b;
+System.err.println("c = "+c);
+System.err.println("b = "+b);
+}
+}
+
+
+class Cast10{
+public static void main(String []args){
+ 	float b=65 ;
+	char c;
+	c=(char)b;
+System.err.println("c = "+c);
+System.err.println("b = "+b);
+}
+}
+
+class Casting
+{
+	public static void main(String args[])
+	{
+		float b=65;
+		char c;
+		c = (char)b;
+		System.err.println("b :"+b);
+		System.err.println("c :"+c);
+	}
+}
+
+class Cast9{
+public static void main(String []args){
+ 	float b ;
+	char c ='A'; // No Typecasting
+	b=c; // Implicit && widening
+System.err.println("c = "+c);
+System.err.println("b = "+b);
+}
+}
+
+class Cast8{
+public static void main(String []args){
+ 	int b ;
+	char c ='A';
+	b=c;
+System.err.println("c = "+c);
+System.err.println("b = "+b);
+}
+}
+
+class Cast7{
+public static void main(String []args){
+ 	int b = 65;
+	char c;
+	c=(char)b;
+System.err.println("c = "+c);
+System.err.println("b = "+b);
+}
+}
+
+class Cast6{
+public static void main(String []args){
+ 	int c;
+	boolean b =true;
+	c=(int)b;
+System.err.println("c = "+c);
+System.err.println("b = "+b);
+}
+}
+
+class Cast5{
+public static void main(String []args){
+ 	int a ;
+ 	float b=5;  //impl
+	a=(int)b;  // Exp
+System.err.println("a = "+a);
+System.err.println("b = "+b);
+}
+}
+
+class Literal1{
+static public void main(String args[]){
+int i =0B111;
+System.out.println(i);
+}
+}
+
+class Literal1{
+static public void main(String args[]){
+int i =0b111;
+System.out.println(i);
+}
+}
+
+import java.util.Scanner;
+class  CelsiusToFahrenheit
+{
+public static void main(String []args)
+{
+	double c,f;
+	Scanner sc= new Scanner(System.in);
+System.out.println("Enter the temp in celsius");
+c=sc.nextDouble();
+f =9/5.0*c+32;
+System.out.println("Fahrenheit = "+f);
+System.out.println("Celsius = "+c);
+}
+}
+
+class Rel1
+{
+public static void main(String []args)
+{
+System.out.println(9>10);
+}
+}
+
+class Rel1
+{
+public static void main(String []args)
+{
+int a=10,b=20;
+System.out.println(100==100);
+}
+}
+
+class Rel1
+{
+public static void main(String []args)
+{
+int a=10,b=20;
+System.out.println(a=20);
+}
+}
+
+package com.cs.selection;
+import java.util.Scanner;
+public class LargestOfThree2 {
+	public static void main(String[] args) {
+		int a, b, c;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter any 3 values : - ");
+		a = sc.nextInt();
+		b = sc.nextInt();
+		c = sc.nextInt();
+		if (a > b && a > c)
+			System.out.println(a + " is the largest number");
+		else {
+			if (b > c)
+				System.out.println(b + " is the largest number");
+			else
+				System.out.println(c + " is the largest number");
+		}
+	}
+}
+
+
+package com.cs.selection;
+import java.util.Scanner;
+public class LocationOfPoint2 {
+	public static void main(String[] args) {
+		int x,y;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the co-ordinates of the point");
+		x=sc.nextInt();
+		y=sc.nextInt();
+		
+		if(x>0 && y>0)
+				System.out.println("Point lies in the 1st quadrant");
+		
+		if(x<0 && y>0)
+				System.out.println("Point lies in the 2nd quadrant");
+		
+		if(x<0 && y<0)
+				System.out.println("Point lies in the 3rd quadrant");
+		
+		if(x>0 && y<0)
+				System.out.println("Point lies in the 4th quadrant");
+		
+		if(x!=0 && y==0)
+				System.out.println("Point lies on the X-axis");
+		
+		if(x==0 && y!=0)
+				System.out.println("Point lies on the Y-axis");
+		
+		if(x==0 && y==0)
+				System.out.println("Point is the Origin");
+	}
+}
+
+package com.cs.selection;
+import java.util.Scanner;
+public class LocationOfPoint3 {
+	public static void main(String[] args) {
+		int x,y;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the co-ordinates of the point");
+		x=sc.nextInt();
+		y=sc.nextInt();
+		
+		if(x>0 && y>0)
+				System.out.println("Point lies in the 1st quadrant");
+		
+		else if(x<0 && y>0)
+				System.out.println("Point lies in the 2nd quadrant");
+		
+		else if(x<0 && y<0)
+				System.out.println("Point lies in the 3rd quadrant");
+		
+		else if(x>0 && y<0)
+				System.out.println("Point lies in the 4th quadrant");
+		
+		else if(x!=0 && y==0)
+				System.out.println("Point lies on the X-axis");
+		
+		else if(x==0 && y!=0)
+				System.out.println("Point lies on the Y-axis");
+		
+		else
+				System.out.println("Point is the Origin");
+	}
+}
+
+package com.cs.selection;
+import java.util.Scanner;
+public class RootsOfQuadraticEquation {
+	public static void main(String[] args) {
+		double r1,r2,a,b,c,d ;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the co-effiecients of quad equation : - ");
+		a=sc.nextDouble();
+		b=sc.nextDouble();
+		c=sc.nextDouble();
+		
+		d=b*b-4*a*c;//
+		
+		if(d<0)
+			System.out.println("Roots are imaginary");
+		else if(d==0) {
+			r1=r2=-b/2*a;
+			System.out.println("Roots are real and equal");
+			System.out.println("root 1 = "+r1);
+			System.out.println("root 2 = "+r2);
+		}
+		else
+		{
+			r1=-b+Math.sqrt(d)/2*a;
+			r2=-b-Math.sqrt(d)/2*a;
+			System.out.println("Roots are real and unequal");
+			System.out.println("root 1 = "+r1);
+			System.out.println("root 2 = "+r2);
+		}
+		sc.close();
+		
+	}
+}
